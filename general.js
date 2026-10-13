@@ -1,8 +1,9 @@
 console.log(
     '%cFNR Engine por %c@jimboclowncoder 🏳️‍🌈',
-    'font-family: sans-serif; font-size: 1.5em',
-    'font-size: 1.5em; text-transform: uppercase; font-weight: 800; color: #c381b9;'),
-    console.log('https://jimboclowncoder.tumblr.com/');
+    'font-family: sans-serif; font-size: 1.5em; color: #f5f5f5',
+    'font-family: monospace; font-size: 1.5em; text-transform: uppercase; font-weight: 900; color: #ff4c4c; text-shadow: 2px 2px 0 #00e5ff, -1px -1px 0 #00e5ff; letter-spacing: 2px;'
+),
+console.log('https://jimboclowncoder.tumblr.com/');
 
 /* GENERAL */
 document.addEventListener('DOMContentLoaded', async () => {

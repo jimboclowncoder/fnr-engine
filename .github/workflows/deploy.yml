@@ -40,12 +40,6 @@ jobs:
           done
           find _site -maxdepth 2 -type d
 
-      - uses: actions/configure-pages@v6
-
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: ./_site
-
       - name: Debug contents
         run: |
           echo "=== Branches found ==="
@@ -60,6 +54,12 @@ jobs:
             echo "=== $dir ==="
             find "$dir" -type f | sort
           done
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
 
       - id: deployment
         uses: actions/deploy-pages@v5
